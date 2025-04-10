@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cameroonian Traditional Meals</title>
+  <style>
+    body {
+        background-image: url('./menu.img');
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+        
+      background-color: whitesmoke;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 20px;
+    }
+
+    nav a {
+     
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffa726;
+    }
+
+    .menu-container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 30px;
+     
+      border-radius: 12px;
+      box-shadow: 0 4px 12px white(0, 0, 0, 0.1);
+    }
+
+    .menu-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .menu-scroll {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .menu-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 20px;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .dish-image {
+      flex: 0 0 250px;
+      max-width: 250px;
+      margin-right: 20px;
+    }
+
+    .dish-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .dish-details {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .dish-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .dish-description {
+      font-size: 1rem;
+      color: whitesmoke;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #f57c00;
+    }
+
+    @media (max-width: 768px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .dish-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="menu-container">
+    <h1 class="menu-title">CAMEROON'S TRADITIONAL MEALS AND PRICES</h1>
+    <div class="menu-scroll">
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./ndole.png" alt="Ndolé" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Ndolé</div>
+          <div class="dish-description">A flavorful dish made with bitterleaf, peanuts, and fish or meat.</div>
+          <div class="price">$72.99</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./dg.jpeg" alt="Poulet DG" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Poulet DG</div>
+          <div class="dish-description">A popular dish made with chicken, plantains, and vegetables, typically enjoyed during special occasions.</div>
+          <div class="price">$94.99</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./eru.jpg" alt="Eru" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Eru</div>
+          <div class="dish-description">A vegetable stew made with Eru leaves, accompanied by cocoyams and meat or fish.</div>
+          <div class="price">$70.99</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./achu.jpeg" alt="Achu" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Achu</div>
+          <div class="dish-description">Pounded cocoyams served with spicy yellow soup and cow skin — a classic from the Western region.</div>
+          <div class="price">$51.50</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./koki.jpeg" alt="Koki" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Koki</div>
+          <div class="dish-description">A savory steamed bean cake, often served with plantains or boiled yam.</div>
+          <div class="price">$39.99</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./bitter.jpeg" alt="Bitterleaf Soup" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Bitterleaf Soup</div>
+          <div class="dish-description">A rich and hearty soup made from bitter leaves, typically served with pounded yam or rice.</div>
+          <div class="price">$13.50</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./corn.jpeg" alt="Porridge Corn and Beans" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Porridge Corn and Beans</div>
+          <div class="dish-description">A comforting and nutritious dish made with corn and beans, often eaten for breakfast or as a light meal.</div>
+          <div class="price">$47.50</div>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="dish-image">
+          <img src="./mindo.webp" alt="Miondo" />
+        </div>
+        <div class="dish-details">
+          <div class="dish-name">Miondo</div>
+          <div class="dish-description">A traditional dish made from steamed cassava served with spicy fish or meat sauce.</div>
+          <div class="price">$58.50</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

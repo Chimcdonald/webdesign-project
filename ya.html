@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Reservation</title>
+    <style>
+        body {
+            background-image: url('./reserve.jpg');
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #2d3748;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(even) {
+           
+        }
+
+        tbody tr:hover {
+            background-color: #edf2f7;
+            transition: background-color 0.3s ease;
+        }
+
+        th {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            font-size: 15px;
+        }
+
+        td.status {
+            font-weight: bold;
+        }
+
+        td.status.available {
+            color: green;
+        }
+
+        td.status.reserved {
+            color: #e53e3e;
+        }
+    </style>
+</head>
+<body>
+    <table border="2">
+        <thead>
+          <tr>
+            <th>Table Number.</th>
+            <th>Seats</th>
+            <th>Status</th>
+            <th>Reservation Name</th>
+            <th>Time Slot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>Available</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>Reserved</td>
+            <td>Machette</td>
+            <td>6:00 PM – 7:30 PM</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>Available</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>4</td>
+            <td>Reserved</td>
+            <td>Leo Messi</td>
+            <td>7:00 PM – 9:00 PM</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>Available</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>6</td>
+            <td>Reserved</td>
+            <td> Kira</td>
+            <td>8:00 PM – 10:00 PM</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>Available</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>10</td>
+            <td>Reserved</td>
+            <td>Wagwan</td>
+            <td>7:00 PM – 10:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    
+</body>
+</html>
